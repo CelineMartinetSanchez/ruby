@@ -1,1 +1,22 @@
-// Copy your irb shell history below !
+// Copy your irb shell history below !//
+
+irb(main):002:0> my_name = "Celine"
+=> "Celine"
+irb(main):003:0> def say_hi_to(name)
+irb(main):004:1> puts "Hello #{name}"
+irb(main):005:1> end
+=> nil
+irb(main):006:0> say_hi_to("Bob")
+Hello Bob
+=> nil
+irb(main):007:0> my_name = "Bob"
+=> "Bob"
+irb(main):008:0> say_hi_to(my_name)
+Hello Bob
+=> nil
+irb(main):009:0> my_name = "Herve"
+=> "Herve"
+irb(main):010:0> say_hi_to(my_name)
+Hello Herve
+=> nil
+irb(main):011:0>
