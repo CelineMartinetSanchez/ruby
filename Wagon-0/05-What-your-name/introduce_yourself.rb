@@ -13,4 +13,4 @@ length = (first_name.length + middle_name.length + last_name.length)
 
 puts "Hi #{first_name} #{middle_name} #{last_name}! You have #{length} characters in your name."
 
-puts "Your're a good person!" unless (last_name.empty? || middle_name.empty? || last_name.empty?)
+puts 'Your\'re a good person!' unless (last_name.empty? || middle_name.empty? || last_name.empty?)
