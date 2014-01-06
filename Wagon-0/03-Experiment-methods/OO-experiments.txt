@@ -1,2 +1,58 @@
 // Copy some experiments you made on ruby String and Fixnum objects below !
 // You choose pick 3 methods for String and 3 methods for Fixnum
+
+C:\Users\Céline\Documents\01_Le Wagon\ruby>irb
+irb(main):001:0> "I'm the boss".methods
+=> [:<=>, :==, :===, :eql?, :hash, :casecmp, :+, :*, :%, :[], :[]=, :insert, :le
+ngth, :size, :bytesize, :empty?, :=~, :match, :succ, :succ!, :next, :next!, :upt
+o, :index, :rindex, :replace, :clear, :chr, :getbyte, :setbyte, :byteslice, :to_
+i, :to_f, :to_s, :to_str, :inspect, :dump, :upcase, :downcase, :capitalize, :swa
+pcase, :upcase!, :downcase!, :capitalize!, :swapcase!, :hex, :oct, :split, :line
+s, :bytes, :chars, :codepoints, :reverse, :reverse!, :concat, :<<, :prepend, :cr
+ypt, :intern, :to_sym, :ord, :include?, :start_with?, :end_with?, :scan, :ljust,
+ :rjust, :center, :sub, :gsub, :chop, :chomp, :strip, :lstrip, :rstrip, :sub!, :
+gsub!, :chop!, :chomp!, :strip!, :lstrip!, :rstrip!, :tr, :tr_s, :delete, :squee
+ze, :count, :tr!, :tr_s!, :delete!, :squeeze!, :each_line, :each_byte, :each_cha
+r, :each_codepoint, :sum, :slice, :slice!, :partition, :rpartition, :encoding, :
+force_encoding, :valid_encoding?, :ascii_only?, :unpack, :encode, :encode!, :to_
+r, :to_c, :>, :>=, :<, :<=, :between?, :nil?, :!~, :class, :singleton_class, :cl
+one, :dup, :initialize_dup, :initialize_clone, :taint, :tainted?, :untaint, :unt
+rust, :untrusted?, :trust, :freeze, :frozen?, :methods, :singleton_methods, :pro
+tected_methods, :private_methods, :public_methods, :instance_variables, :instanc
+e_variable_get, :instance_variable_set, :instance_variable_defined?, :instance_o
+f?, :kind_of?, :is_a?, :tap, :send, :public_send, :respond_to?, :respond_to_miss
+ing?, :extend, :display, :method, :public_method, :define_singleton_method, :obj
+ect_id, :to_enum, :enum_for, :equal?, :!, :!=, :instance_eval, :instance_exec, :
+__send__, :__id__]
+irb(main):002:0> "I'm the boss".length
+=> 12
+irb(main):003:0> "You're awesome".capitalize
+=> "You're awesome"
+irb(main):004:0> "you're awesome".capitalize
+=> "You're awesome"
+irb(main):005:0> "Ruby rocks".upcase
+=> "RUBY ROCKS"
+irb(main):006:0> 19.methods
+=> [:to_s, :-@, :+, :-, :*, :/, :div, :%, :modulo, :divmod, :fdiv, :**, :abs, :m
+agnitude, :==, :===, :<=>, :>, :>=, :<, :<=, :~, :&, :|, :^, :[], :<<, :>>, :to_
+f, :size, :zero?, :odd?, :even?, :succ, :ord, :integer?, :upto, :downto, :times,
+ :next, :pred, :chr, :to_i, :to_int, :floor, :ceil, :truncate, :round, :gcd, :lc
+m, :gcdlcm, :numerator, :denominator, :to_r, :rationalize, :singleton_method_add
+ed, :coerce, :i, :+@, :eql?, :quo, :remainder, :real?, :nonzero?, :step, :to_c,
+:real, :imaginary, :imag, :abs2, :arg, :angle, :phase, :rectangular, :rect, :pol
+ar, :conjugate, :conj, :between?, :nil?, :=~, :!~, :hash, :class, :singleton_cla
+ss, :clone, :dup, :initialize_dup, :initialize_clone, :taint, :tainted?, :untain
+t, :untrust, :untrusted?, :trust, :freeze, :frozen?, :inspect, :methods, :single
+ton_methods, :protected_methods, :private_methods, :public_methods, :instance_va
+riables, :instance_variable_get, :instance_variable_set, :instance_variable_defi
+ned?, :instance_of?, :kind_of?, :is_a?, :tap, :send, :public_send, :respond_to?,
+ :respond_to_missing?, :extend, :display, :method, :public_method, :define_singl
+eton_method, :object_id, :to_enum, :enum_for, :equal?, :!, :!=, :instance_eval,
+:instance_exec, :__send__, :__id__]
+irb(main):007:0> 19.odd?
+=> true
+irb(main):008:0> 15.to_i
+=> 15
+irb(main):009:0> 16.to_s
+=> "16"
+irb(main):010:0>
