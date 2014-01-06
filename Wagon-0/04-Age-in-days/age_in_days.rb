@@ -1,9 +1,9 @@
 def age_in_days(day, month, year)
 t1 = (Time.now).- Time.new(year, month, day)
 
-t2 = t1./(83400)
+t2 = t1./(83400).to_i
 
-return t2.to_i
+return "You have #{t2} days buddy!"
 
 end
 
