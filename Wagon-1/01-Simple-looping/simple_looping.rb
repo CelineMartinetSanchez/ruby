@@ -22,6 +22,7 @@ def sum3(min, max)
 	(max * (max + 1) - min * (min - 1)) / 2
 end
 
+
 # Testing your code
 
 min = 1
