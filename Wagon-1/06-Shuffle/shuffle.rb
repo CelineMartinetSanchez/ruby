@@ -17,9 +17,9 @@ def shuffle2(array)
 end
 
 # Testing your shuffle algorithm
-#p shuffle(sorted_array) != shuffle(sorted_array) # => true
-#p shuffle2(sorted_array) != shuffle2(sorted_array) # => true
-#p shuffle2(sorted_array)
+p shuffle(sorted_array) != shuffle(sorted_array) # => true
+p shuffle2(sorted_array) != shuffle2(sorted_array) # => true
+
 sorted_array = (1..10).to_a
 
 p shuffle(sorted_array)
