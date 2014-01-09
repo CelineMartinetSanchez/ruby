@@ -1,9 +1,7 @@
 def bugged_concatenate(*array)
   # 2. fix the code: TypeError
-
   array = array[0] if array.length == 1 and array[0].is_a?(Array)
-
-	puts array.inject("") { |output, element| output + element.to_s }.upcase
+  puts array.inject("") { |output, element| output + element.to_s }.upcase
 	
 end
 
