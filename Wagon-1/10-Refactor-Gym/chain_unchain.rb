@@ -11,19 +11,17 @@ def shuffle_word(a_word)
 
 end
 
-
 def quote_prime_numbers(n)
 
-	prime = (1..n).find_all do |i|
-		dividors = (2..i-1)
-		check = dividors.select {|k| i % k == 0 }
-		check.count == 0
-	end	
+  prime = (1..n).find_all do |i|
+    dividors = (2..i-1)
+    check = dividors.select {|k| i % k == 0 }
+    check.count == 0
+  end	
 
-	write_prime = prime.map{ |prime_num| "#{prime_num} is prime"}
+  write_prime = prime.map{ |prime_num| "#{prime_num} is prime"}
 
-	return write_prime
-
+  return write_prime
 
 end
 
