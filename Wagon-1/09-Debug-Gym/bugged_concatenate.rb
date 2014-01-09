@@ -7,7 +7,7 @@ end
 
 
 # 1. fix the method call: ArgumentError
-print bugged_concatenate( [1, "9", 84, " ", "George Orwell"])
+bugged_concatenate( [1, "9", 84, " ", "George Orwell"])
 
-print bugged_concatenate("Simply happy ", 4, " the weather is", " fine")
+bugged_concatenate("Simply happy ", 4, " the weather is", " fine")
 
