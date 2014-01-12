@@ -21,12 +21,12 @@ numbers = []
 numbers_2 = []
 
 
-while
+while true
 	answers = gets.chomp
 	numbers_2 = numbers.dup
 	break if answers.empty?
 	numbers << answers
-end #until answers.empty?
+end
 
 
 
@@ -37,6 +37,3 @@ puts
 puts "!!! Moi je casse tout !!!"
 puts "---> Array classee : #{tri!(transform_to_i!(numbers_2))}"
 puts "---> Array enregistree (output) : #{numbers_2}"
-
-
-(1..4).collect_concat { |i| i+(i-1) }
