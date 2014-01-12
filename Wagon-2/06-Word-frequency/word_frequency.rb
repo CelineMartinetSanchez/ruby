@@ -34,18 +34,19 @@ STOPWORDS = ("a,able,about,across,after,all,almost,also,am,among,an,and,any,are,
 
 def most_common_words(filename, n)
 
-	word_list = filename.split.each { |x| x.capitalize!} #my file words'list.
+  word_list = filename.split.each { |x| x.capitalize!} #my file words'list.
 
-	counts = Hash.new(0)  #counting
-	for word in word_list
-		counts[word] += 1
-	end
+  counts = Hash.new(0)  #counting
+  
+  for word in word_list
+	  counts[word] += 1
+  end
 
-	clean_list = counts.delete_if{ |x| STOPWORDS.include?(x.downcase)} #delete stopwords from my list
+  clean_list = counts.delete_if{ |x| STOPWORDS.include?(x.downcase)} #delete stopwords from my list
 
-	list = clean_list.sort_by{ |x,y| y} #sort from smaller to higher
+  list = clean_list.sort_by{ |x,y| y} #sort from smaller to higher
 
-	return list.last(n).reverse #top n words most used in my file.
+  return list.last(n).reverse #top n words most used in my file.
 
 end
 
