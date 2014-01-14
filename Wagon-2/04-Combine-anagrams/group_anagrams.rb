@@ -1,9 +1,9 @@
 def group_anagrams(words)
-  # your code here
+  words.each { |x| x.split('')}
 end
 
 # input:
-group_anagrams( ['cars', 'for', 'potatoes', 'racs', 'four','scar', 'creams', 'scream'] )
+p group_anagrams( ['cars', 'for', 'potatoes', 'racs', 'four','scar', 'creams', 'scream'] )
 
 # output:
 # =>  [["cars", "racs", "scar"], ["four"], ["for"], ["potatoes"], ["creams", "scream"]]
