@@ -15,4 +15,11 @@ def hop_hop_hop(number_of_exercises)
   end
 end
 
+def hop_hop(number_of_exercises)
+  counter = 1
+  1.upto(number_of_exercises) {puts yield(counter); counter +=1 }
+end
+
+
 hop_hop_hop(6)
+hop_hop(6) {|n| " hop! " * n + "Encore une fois !"}
