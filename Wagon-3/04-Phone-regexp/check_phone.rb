@@ -13,7 +13,8 @@
 
 
 def is_valid_phone_number(phone_number)
-  # your code here
+	nice_phone = phone_number.delete " -" 
+	nice_phone =~ /(^0|^\+33)\d{9}/ ? true : false
 end
 
 
