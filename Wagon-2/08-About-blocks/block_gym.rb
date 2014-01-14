@@ -30,7 +30,10 @@ times(5) { |i| puts i }
 # 3 - Block timer
 
 def timer_for
-  # your code goes here
+  process_beg = Time.now
+  yield
+  process_end = Time.now 
+  print "action executed in #{process_end - process_beg} seconds"
 end
 
 timer_for do 
